@@ -6,15 +6,17 @@ $(document).ready(function () {
   
 
   $(window).scroll(function () { // check if scroll event happened
-    if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+    if ($(document).scrollTop() > 10) { // check if user scrolled more than 50 from top of the browser window
       $("#hireBtn").css({ "backgroundColor" : "red", "border" : "1px solid black", "borderRadius" : "8px", "color": "white" });
       $(".navbar-toggle .icon-bar").css("backgroundColor", "black");
-      $(".navbar-header a, .navbar-right .nav-a").css("color", "black");
+      $(".navbar-header a").css({"color":"black"});
+      $(".navbar-right .nav-a").css({"color":"black", "border" : "1px solid black", "borderRadius" : "8px"});
       $(".custom-navbar").css("backgroundColor", "white");
       $(".activeN").css({"backgroundColor" : "lightgray", "color" : "black", "borderRadius" : "8px"});
     } else {
       $(".navbar-toggle .icon-bar").css("background", "white");
-      $(".navbar-header a, .navbar-right>li>a").css("color", "white");
+      $(".navbar-header a").css({"color":"white"});
+      $(".navbar-right .nav-a").css({"color":"white", "border" : "1px solid white"});
       $(".custom-navbar").css("backgroundColor", "rgba(0, 0, 0, 0.25)");
       $(".activeN").css({"backgroundColor" : "gray", "color" : "white", "borderRadius" : "8px"});
     }
@@ -73,9 +75,9 @@ $(document).ready(function () {
   // JQUERY EFFECTS
 
 $(".custom-navbar").fadeIn(1250);
-$(".pictures, .dark").delay(500).slideDown(1550);
-$(".smallPicture").fadeIn(500);
-$(".carouseltext").hide().fadeIn(3000);
+$(".pictures, .dark").delay(500).slideDown(1000);
+$(".smallPicture").fadeIn(100);
+$(".carouseltext").hide().fadeIn(2000);
 $(".grey-background").hide().slideDown(1500);
 $(".redWhole").hide().fadeIn(1500);
 $(".contacts").hide(500).fadeIn(1500);
@@ -99,6 +101,10 @@ $(".redTelephone").mouseleave(function(){
 
 $(".btnMeet ,.belo, .crveno").mouseover(function(){
   $(this).addClass("tada");
+});
+
+$(".btnMeet ,.belo, .crveno").mouseleave(function(){
+  $(this).removeClass("tada");
 });
 
 $(".rPh1, .rPh2, .rPh3").mouseover(function(){
@@ -133,9 +139,7 @@ $(".ramka").mouseover(function(){
   $(this).addClass("fadeInUp");
 });
 
-$(".carousellPictures").mouseover(function(){
-  $(this).addClass("flipInY");
-});
+
 
 //  Lower than 480px 
 $(".redTelephone, .helpYou").mouseover(function(){
