@@ -36,22 +36,22 @@ nav {
 
 .video {
   position: relative;
-  margin-top: 83px;
+  /* margin-top: 83px; */
 }
 
 .video span {
   position: absolute;
   top: 100%;
   left: 50%;
-  height: 65px;
-  width: 65px;
+  height: 70px;
+  width: 70px;
   transform: translate(-50%, -50%);
-  background: rgb(182, 181, 181);
+  background: rgb(204, 204, 204);
   border-radius: 50%;
 }
 
 .video span i {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .flexVideo {
@@ -105,6 +105,7 @@ nav {
 
 #hireBtn {
   background-color: rgb(209, 2, 2);
+  border-radius: 8px;
 }
 
 .logo-pageTop {
@@ -132,6 +133,10 @@ nav {
   border: 2px solid white;
   background-color: transparent;
   transition: all 0.3s ease;
+}
+
+.btn {
+  border-radius: 0;
 }
 
 .redLines {
@@ -240,7 +245,7 @@ nav {
 
 .carouseltext {
   position: absolute;
-  top: 40%;
+  top: 35%;
   color: white;
   text-shadow: 1px 1px black;
 }
@@ -523,8 +528,7 @@ nav {
   color: blue;
 }
 
-.margin,
-.marginTeam {
+.margin {
   margin-top: 125px;
 }
 
@@ -534,7 +538,7 @@ nav {
 
 .marginClockHireUs,
 .marginClockExtra {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .marginClockExtra {
@@ -793,15 +797,19 @@ nav {
 }
 
 .rowValues {
-  margin-top: 50px;
+  margin: 3em 0 6em;
 }
 
 .landingTeamText {
   margin: 75px 0px 40px 0px;
 }
 
+.landingTeamText h3 {
+  line-height: 1.3em;
+}
+
 .teamPictures {
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .additionalText1,
@@ -813,7 +821,10 @@ nav {
   font-weight: 600;
 }
 
-.footer,
+.footer {
+  margin: 2em 0 1em;
+}
+
 .footerHire {
   margin: 85px 0px 12px 0px;
 }
@@ -985,53 +996,17 @@ nav {
   color: red;
 }
 
-.bounceInDown {
-  -webkit-animation-name: bounceInDown;
-  -webkit-animation-duration: 1.5s;
-  animation-name: bounceInDown;
-  animation-duration: 1.5s;
+.textOurValues .bg-primary,
+.textOurValues .wl {
+  font-size: 2em;
+  padding: 0.25em;
+  font-weight: bold;
 }
 
-.bounceIn {
-  -webkit-animation-name: bounceIn;
-  -webkit-animation-duration: 1s;
-  animation-name: bounceIn;
-  animation-duration: 1s;
-}
-
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  -webkit-animation-duration: 1s;
-  animation-name: fadeInDown;
-  animation-duration: 1s;
-}
-
-.zoomInDown {
-  -webkit-animation-name: zoomInDown;
-  -webkit-animation-duration: 1s;
-  animation-name: zoomInDown;
-  animation-duration: 1s;
-}
-
-.zoomInUp {
-  -webkit-animation-name: zoomInUp;
-  -webkit-animation-duration: 1s;
-  animation-name: zoomInUp;
-  animation-duration: 1s;
-}
-
-.zoomIn {
-  -webkit-animation-name: zoomIn;
-  -webkit-animation-duration: 1s;
-  animation-name: zoomIn;
-  animation-duration: 1s;
-}
-
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
-  animation-name: fadeInUp;
-  animation-duration: 1s;
+.textOurValues .wl {
+  font-size: 1.25em;
+  border-bottom: 0.2em solid red;
+  padding-bottom: 0;
 }
 
 .navLogo .fas,
@@ -1047,6 +1022,30 @@ nav {
 .activeN:hover {
   background-color: red;
   color: white;
+}
+
+.additionalText1,
+.additionalText2,
+.additionalText3,
+.additionalText4 {
+  padding-top: 1em;
+  color: black;
+}
+
+.additionalText1 p,
+.additionalText2 p,
+.additionalText3 p,
+.additionalText4 p {
+  font-size: 18px;
+  padding: 0.5em 0;
+}
+
+.caption h3 {
+  font-size: 26px;
+}
+
+.caption p {
+  font-size: 17px;
 }
 
 .artificial,
@@ -1137,7 +1136,16 @@ nav {
 }
 
 .ulNone {
-  font-size: 18px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.ulNone ul {
+  list-style: none;
+}
+
+.ulNone li {
+  padding: 0.2em;
 }
 
 .ulNone .bg-primary {
@@ -1255,12 +1263,16 @@ nav {
     left: 9%;
   }
 
-  .smallPicture {
-    max-width: 80%;
+  .textOurValues {
+    margin-bottom: 2em;
   }
 
-  .forMarginTop {
-    padding: 18em 0 0.5em;
+  .marginClockHireUs {
+    margin-top: 70px;
+  }
+
+  .smallPicture {
+    max-width: 80%;
   }
 
   .pictures,
@@ -1318,10 +1330,6 @@ nav {
     margin-top: 4%;
   }
 
-  .rowValues {
-    margin-top: 25px;
-  }
-
   .textValues {
     margin-top: 10px;
   }
@@ -1358,7 +1366,7 @@ nav {
   }
 
   .ulNone {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 
@@ -1443,6 +1451,10 @@ nav {
     font-size: 16px;
     margin-top: 30px;
   }
+
+  .navbar-nav li {
+    margin: 1.1em 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1478,25 +1490,35 @@ nav {
   }
 
   .belo {
+    padding: 10px 40px;
     margin-bottom: 10px;
+    font-size: 16px;
   }
 
   .crveno {
+    padding: 10px 40px;
     margin-left: 0;
+    font-size: 16px;
   }
 
   .hhref {
     display: none;
   }
 
+  .carousellPictures {
+    top: 89%;
+    left: 0%;
+  }
+
   .carouseltext {
-    top: 20%;
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.75);
+    top: 22%;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .carouseltext h2 {
     font-size: 25px;
+    margin: 0 0 20px 0;
   }
 
   .navbar-brand,
@@ -1573,11 +1595,7 @@ nav {
   }
 
   .rowValues {
-    margin-top: 15px;
-  }
-
-  .marginTeam {
-    margin-top: 70px;
+    margin-top: 2em;
   }
 
   .video span {
@@ -1593,7 +1611,14 @@ nav {
   }
 
   .landingTeamText {
-    margin: 45px 0px 40px 0px;
+    margin: 1.5em 0;
+  }
+
+  .landingTeamText h3 {
+    font-size: 20px;
+    padding: 0.5em;
+    text-align: left;
+    line-height: 1.5em;
   }
 
   .redTelephone {
@@ -1731,7 +1756,7 @@ nav {
   }
 
   .dark {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.35);
   }
 
   .first,
@@ -1744,6 +1769,24 @@ nav {
     -moz-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
     box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
   }
+
+  .navbar-nav {
+    margin: 0;
+  }
+}
+
+@media screen and (min-device-width: 440px) and (max-device-width: 459px) {
+  .carousellPictures {
+    top: 92%;
+  }
+
+  .carouseltext {
+    top: 18%;
+  }
+
+  .forMarginTop {
+    padding: 18em 0 0.5em;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -1751,6 +1794,14 @@ nav {
     text-align: center;
     font-size: 39px;
     margin-bottom: 30px;
+  }
+
+  .carouseltext {
+    top: 19%;
+  }
+
+  .carousellPictures {
+    top: 98%;
   }
 
   .forMarginBottom {
@@ -1810,14 +1861,18 @@ nav {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 321px) {
   .pictures,
   .dark {
-    height: 102vh;
+    height: 100vh;
   }
 
   .gol {
     display: none;
+  }
+
+  .carouseltext {
+    padding: 1em;
   }
 
   .div,
@@ -1829,7 +1884,7 @@ nav {
 
   .auto h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 30px;
   }
   .belo {

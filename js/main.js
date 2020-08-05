@@ -114,30 +114,6 @@ $(document).ready(function () {
     $(this).addClass("bounceInDown");
   });
 
-  $(".chiefExThree, .chiefChThree").mouseover(function () {
-    $(this).addClass("zoomInUp");
-  });
-
-  $(".chiefChOne, .chiefExOne").mouseover(function () {
-    $(this).addClass("zoomInDown");
-  });
-
-  $(".chiefMarTwo").mouseover(function () {
-    $(this).addClass("zoomIn");
-  });
-
-  $(".chiefChTwo, .chiefExTwo").mouseover(function () {
-    $(this).addClass("bounceIn");
-  });
-
-  $(".chiefMarOne").mouseover(function () {
-    $(this).addClass("fadeInDown");
-  });
-
-  $(".chiefMarThree").mouseover(function () {
-    $(this).addClass("fadeInUp");
-  });
-
   //  Lower than 480px
   $(".redTelephone, .helpYou").mouseover(function () {
     $(".redTelephone").addClass("rollIn");
