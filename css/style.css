@@ -113,6 +113,10 @@ nav {
   margin-top: 0;
 }
 
+.custom-navbar {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
 .grey-background {
   background-color: transparent;
   color: white;
@@ -223,14 +227,14 @@ nav {
 
 .dark2,
 .dark3 {
-  background-color: rgba(3, 3, 3, 0.8);
+  background-color: rgba(3, 3, 3, 0.3);
   height: 100vh;
   width: 100%;
   position: relative;
 }
 
 .dark3 {
-  height: 100vh;
+  background-color: rgba(3, 3, 3, 0.15);
 }
 
 .footerPriv {
@@ -1059,17 +1063,40 @@ nav {
 
 .legal {
   background-image: url("../img/law2.jpg");
-  height: 100vh;
 }
 
 .legalP {
   color: white;
+  font-size: 16px;
 }
 
 .artText,
-.artLegal {
-  margin-top: 9%;
-  z-index: 3;
+.artLegal,
+.policy {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.policy {
+  padding: 2em 0;
+}
+
+.rgbBackground {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.rgbBackground h2 {
+  margin-top: 0px;
+}
+
+.rgbBackground .artMar:last-child {
+  margin-bottom: 0px;
 }
 
 .redWhole {
@@ -1084,6 +1111,8 @@ nav {
 
 .artMar {
   margin-top: 35px;
+  text-align: left;
+  line-height: 1.25em;
 }
 
 .extraOne {
@@ -1228,11 +1257,6 @@ nav {
     padding-right: 95px;
   }
 
-  .artText {
-    margin-top: 33%;
-    z-index: 3;
-  }
-
   .shortline {
     width: 20px;
   }
@@ -1352,10 +1376,6 @@ nav {
     background-position-x: -250px;
   }
 
-  .artLegal {
-    margin-top: 23%;
-  }
-
   .btnService {
     display: block;
   }
@@ -1392,7 +1412,11 @@ nav {
 
   .footer,
   .footerHire {
-    margin: 40px 0px 10px 0px;
+    margin: 2em 0 1em 0;
+  }
+
+  .video {
+    margin-top: 89px;
   }
 
   .video span {
@@ -1595,7 +1619,7 @@ nav {
   }
 
   .pictureTeam {
-    height: 40vh;
+    height: 41vh;
   }
 
   .rowValues {
@@ -1710,14 +1734,9 @@ nav {
     background-position-y: 0px;
   }
 
-  .artText {
-    margin-top: 20%;
-    z-index: 3;
-  }
-
   .artText h4 strong {
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .artText h4 strong em {
@@ -1725,13 +1744,24 @@ nav {
     font-size: 16px;
   }
 
-  .legal,
-  .dark3 {
-    height: 116vh;
+  .policy .artMar {
+    font-size: 16px;
   }
 
-  .artLegal {
-    margin-top: 20%;
+  .policy {
+    height: 90vh;
+  }
+
+  .artText,
+  .artLegal,
+  .legal,
+  .dark3 {
+    min-height: 160vh;
+  }
+
+  .rgbBackground {
+    margin: 2em;
+    padding: 1.25em;
   }
 
   .redLines {
@@ -1744,14 +1774,16 @@ nav {
   }
 
   .ffflex {
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
-    height: 60px;
   }
 
   .extraOneDiv {
     margin-top: 15px;
+  }
+
+  .artificial,
+  .dark2 {
+    min-height: 100vh;
   }
 
   .pictures,
@@ -1784,8 +1816,25 @@ nav {
     top: 92%;
   }
 
+  .policy {
+    padding: 1em 0;
+    margin: 3em 0 1em;
+  }
+
   .carouseltext {
     top: 18%;
+  }
+
+  .artificial,
+  .dark2 {
+    min-height: 112vh;
+  }
+
+  .artText,
+  .artLegal,
+  .legal,
+  .dark3 {
+    min-height: 175vh;
   }
 
   .forMarginTop {
@@ -1816,40 +1865,47 @@ nav {
     height: 350px;
   }
 
-  .legal,
-  .dark3 {
-    height: 125vh;
+  .artificial,
+  .dark2 {
+    min-height: 117vh;
   }
 
-  .pictureTeam {
-    height: 43vh;
+  .legal,
+  .dark3 {
+    min-height: 115vh;
   }
 
   .redTelephone {
     margin-top: 125px;
   }
 
-  .artText {
-    margin-top: 19%;
-    z-index: 3;
+  .policy {
+    padding: 1em 0;
+    margin: 4em 0 1em;
+  }
+
+  .artText,
+  .artLegal,
+  .legal,
+  .dark3 {
+    min-height: 185vh;
+  }
+
+  .rgbBackground {
+    margin: 2em 1em;
+    padding: 1.25em;
   }
 
   .artText h2 {
     font-size: 22px;
   }
 
-  .artMar {
-    margin-top: 20px;
-  }
-
   .artText h4 strong {
     color: rgb(255, 255, 255);
-    font-size: 12px;
   }
 
   .artText h4 strong em {
     color: red;
-    font-size: 14px;
   }
 
   .textServices {
@@ -1871,8 +1927,18 @@ nav {
     height: 100vh;
   }
 
+  .artificial,
+  .dark2 {
+    min-height: 131vh;
+  }
+
   .gol {
     display: none;
+  }
+
+  .policy {
+    padding: 1em 0;
+    margin: 7em 0 1em;
   }
 
   .carouseltext {
@@ -1925,29 +1991,19 @@ nav {
     margin-left: -75px;
   }
 
-  .artText {
-    margin-top: 15%;
-  }
-
-  .artLegal {
-    margin-top: 23%;
+  .artText,
+  .artLegal,
+  .legal,
+  .dark3 {
+    min-height: 247vh;
   }
 
   .artText h4 strong {
     color: rgb(255, 255, 255);
-    font-size: 12px;
   }
 
   .artText h4 strong em {
     color: red;
-    font-size: 14px;
-  }
-  .artMar {
-    margin-top: 5px;
-  }
-  .legal,
-  .dark3 {
-    height: 153vh;
   }
 
   .carousellPictures {
