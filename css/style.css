@@ -118,7 +118,7 @@ nav {
 }
 
 .grey-background {
-  background-color: transparent;
+  /* background-color: transparent; */
   color: white;
 }
 
@@ -130,6 +130,7 @@ nav {
   background-color: red;
   font-size: 18px;
   font-weight: bold;
+  margin-top: 0.75em;
 }
 
 .btnMeet:hover {
@@ -321,6 +322,10 @@ nav {
   font-weight: bold;
   color: rgb(77, 77, 77);
   padding: 1em 0;
+}
+
+.cassette {
+  height: 100%;
 }
 
 .paragraphHover {
@@ -517,8 +522,7 @@ nav {
 }
 
 .ma div p,
-.textTablet p,
-.extraD p {
+.textTablet p {
   color: rgb(75, 1, 75);
   font-weight: 600;
 }
@@ -680,7 +684,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 50px;
 }
 
 .href {
@@ -705,15 +709,35 @@ nav {
   list-style-type: none;
 }
 
+.flexServices li a {
+  color: black;
+  text-decoration: none;
+}
+
+.flexServices li:hover {
+  background-color: rgb(58, 233, 160);
+  cursor: pointer;
+  color: white;
+}
+
+.flexServices li a:hover {
+  color: white;
+}
+
 .textServices {
   font-size: 20px;
   text-align: right;
+  padding: 2em;
   background-color: rgb(58, 233, 160);
   font-weight: bold;
   transform: perspective(500px) rotateY(19deg);
   top: 10%;
   -webkit-clip-path: polygon(22% 0%, 100% 0%, 100% 100%, 1% 100%);
   clip-path: polygon(22% 0%, 100% 0%, 100% 100%, 1% 100%);
+}
+
+.textServices p:last-of-type {
+  margin-bottom: 0;
 }
 
 .active {
@@ -736,7 +760,7 @@ nav {
 }
 
 .fServ {
-  margin-top: 20px;
+  margin: 25px 0 5px;
 }
 
 .weAreBest {
@@ -748,13 +772,18 @@ nav {
 .coding,
 .marketing,
 .branding {
-  margin-bottom: 30px;
   font-weight: bold;
   font-size: 30px;
 }
 
 .marketing {
   padding: 10px 10px 10px 0px;
+}
+
+.coding2,
+.marketing2,
+.branding2 {
+  padding: 0.5em;
 }
 
 .tape,
@@ -847,12 +876,9 @@ nav {
 
 .contacts h3 {
   color: white;
-  font-weight: 600;
-  font-size: 22px;
-}
+  font-weight: bold;
 
-.contacts h3:hover {
-  text-shadow: 2px 1px rgb(255, 0, 0);
+  font-size: 24px;
 }
 
 .contacts .row {
@@ -960,7 +986,7 @@ nav {
 }
 
 .redTelephone {
-  width: 125%;
+  width: 105%;
   margin-left: 50px;
 }
 
@@ -991,7 +1017,7 @@ nav {
 }
 
 .helpYou {
-  margin-top: 110px;
+  padding-top: 125px;
   color: white;
   font-size: 36px;
 }
@@ -1019,7 +1045,6 @@ nav {
 }
 
 .gre-background strong {
-  background-color: red;
   color: white;
 }
 
@@ -1100,13 +1125,14 @@ nav {
 }
 
 .redWhole {
+  background: black;
+  height: 100vh;
+
   background-image: url("../img/earth.jpg");
   background-size: cover;
   background-repeat: repeat;
   background-position-x: -170px;
   background-position-y: 100px;
-  height: 100vh;
-  display: none;
 }
 
 .artMar {
@@ -1127,12 +1153,16 @@ nav {
   flex-direction: column;
 }
 
+.extraOneDiv h2 {
+  font-size: 36px;
+}
+
 .extraTwo,
 .extraTwoPic2,
 .extraTwoPic3 {
   background-image: url("../img/tel.jpg");
   background-size: cover;
-  height: 89vh;
+  height: 50vh;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -1147,17 +1177,20 @@ nav {
   background-image: url("../img/artificial1.jpg");
 }
 
-.extraThree {
-  margin: 20px 5px;
-}
-
 .extraD {
-  margin-top: 50px;
+  margin-top: 3em;
 }
 
 .extraD h3 {
   color: red;
   font-size: bold;
+}
+
+.extraD p {
+  margin-top: 2em;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: bold;
 }
 
 .footerExtra {
@@ -1185,7 +1218,31 @@ nav {
   color: white;
 }
 
-/* MEDIA  */
+.mouseScroll {
+  height: 45px;
+  background-color: rgb(59, 59, 59);
+  border-radius: 20px;
+  margin-top: 3em;
+}
+
+.extraOneDiv h3 {
+  line-height: 1.25em;
+}
+
+.rowPhone {
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.redRowOne h3:first-of-type {
+  margin-top: 0;
+}
+
+.redRowThree h4:last-of-type {
+  margin-bottom: 0;
+}
+
+/* ---------------------------MEDIA----------------------------------  */
 
 @media screen and (max-width: 1200px) {
   .pictures2 {
@@ -1249,12 +1306,8 @@ nav {
   }
 
   .redTelephone {
-    width: 240%;
+    width: 200%;
     margin-left: -30px;
-  }
-
-  .rowPhone {
-    padding-right: 95px;
   }
 
   .shortline {
@@ -1380,7 +1433,6 @@ nav {
     display: block;
   }
 
-  .tape,
   .textBtnServices {
     margin-top: 150px;
   }
@@ -1443,7 +1495,8 @@ nav {
   }
   .coding,
   .marketing,
-  .branding {
+  .branding,
+  .visMouse {
     text-align: center;
   }
   .weAreBest {
@@ -1483,6 +1536,10 @@ nav {
 
   .navbar-nav li {
     margin: 1.1em 0;
+  }
+
+  .audioServices {
+    display: none;
   }
 }
 
@@ -1540,13 +1597,13 @@ nav {
   }
 
   .carouseltext {
-    top: 22%;
+    top: 19%;
     padding: 1.5em;
     background-color: rgba(0, 0, 0, 0.8);
   }
 
   .carouseltext h2 {
-    font-size: 25px;
+    font-size: 26px;
     margin: 0 0 20px 0;
   }
 
@@ -1651,26 +1708,8 @@ nav {
 
   .redTelephone {
     width: 430%;
-    margin-left: -65px;
+    margin-left: -80px;
     margin-top: 100px;
-  }
-
-  .rowPhone {
-    padding-right: 0px;
-  }
-
-  .hinge {
-    -webkit-animation-duration: 0s;
-    -webkit-animation-name: hinge;
-    animation-duration: 0s;
-    animation-name: hinge;
-  }
-
-  .rollIn {
-    -webkit-animation-name: rollIn;
-    -webkit-animation-duration: 1s;
-    animation-name: rollIn;
-    animation-duration: 1s;
   }
 
   .workDiv1 {
@@ -1678,7 +1717,7 @@ nav {
   }
 
   .weAreBest {
-    margin-bottom: 115px;
+    margin-bottom: 2.5em;
     text-align: center;
   }
 
@@ -1691,22 +1730,27 @@ nav {
   }
 
   .textServices {
-    font-size: 16px;
+    font-size: 17px;
     text-align: right;
     background-color: rgb(58, 233, 160);
     font-weight: bold;
-    padding-top: 0;
   }
 
   .coding,
   .marketing,
   .branding {
-    margin-bottom: 12px;
     font-weight: bold;
-    font-size: 18px;
-    text-align: left;
-    padding: 5px 0px;
+    font-size: 22px;
     border-bottom: 0.2em solid red;
+    padding: 0.75em 0;
+    text-align: left;
+  }
+
+  .coding2,
+  .marketing2,
+  .branding2 {
+    border-bottom: none;
+    text-align: center;
   }
 
   .shortline {
@@ -1714,7 +1758,7 @@ nav {
   }
 
   .helpYou {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .contacts {
@@ -1727,7 +1771,7 @@ nav {
   }
 
   .contacts .h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .redWhole {
@@ -1774,11 +1818,35 @@ nav {
   }
 
   .ffflex {
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .extraOneDiv {
-    margin-top: 15px;
+    margin-top: 2em;
+  }
+
+  .mouseScroll {
+    margin-top: 1.5em;
+  }
+
+  .extraOneDiv h2 {
+    font-size: 26px;
+  }
+
+  .extraOneDiv h3 {
+    font-size: 20px;
+  }
+
+  .extraD {
+    margin-top: 1.5em;
+  }
+
+  .extraD p {
+    margin-top: 1.2em;
+  }
+
+  .extraOneDiv h3:first-of-type {
+    margin-top: 0;
   }
 
   .artificial,
@@ -1809,6 +1877,11 @@ nav {
   .navbar-nav {
     margin: 0;
   }
+
+  .rowPhone {
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
 }
 
 @media screen and (min-device-width: 440px) and (max-device-width: 459px) {
@@ -1823,6 +1896,18 @@ nav {
 
   .carouseltext {
     top: 18%;
+    padding: 1em;
+  }
+
+  .carouseltext h2 {
+    font-size: 22px;
+  }
+
+  .coding,
+  .marketing,
+  .branding {
+    font-size: 20px;
+    padding: 0.75em 0;
   }
 
   .artificial,
@@ -1840,6 +1925,14 @@ nav {
   .forMarginTop {
     padding: 18em 0 0.5em;
   }
+
+  .redTelephone {
+    margin-left: -94px;
+  }
+
+  .helpYou {
+    padding-top: 90px;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -1849,8 +1942,15 @@ nav {
     margin-bottom: 30px;
   }
 
-  .carouseltext {
-    top: 19%;
+  .carouseltext h2 {
+    font-size: 22px;
+  }
+
+  .coding,
+  .marketing,
+  .branding {
+    font-size: 20px;
+    padding: 0.75em 0;
   }
 
   .carousellPictures {
@@ -1906,14 +2006,6 @@ nav {
 
   .artText h4 strong em {
     color: red;
-  }
-
-  .textServices {
-    font-size: 14px;
-    text-align: right;
-    background-color: rgb(58, 233, 160);
-    font-weight: bold;
-    padding-top: 0;
   }
 
   .newFont {
@@ -2014,9 +2106,42 @@ nav {
     margin-top: 485px;
   }
 
-  .extraOne {
-    height: 110vh;
-    margin-top: 110px;
+  .extraOneDiv {
+    margin-top: 2.5em;
+  }
+
+  .mouseScroll {
+    margin-top: 0.5em;
+    height: 2.5em;
+  }
+
+  .extraOneDiv h2 {
+    font-size: 26px;
+  }
+
+  .extraOneDiv h3 {
+    font-size: 18px;
+  }
+
+  .extraD {
+    margin-top: 1.2em;
+  }
+
+  .extraD p {
+    margin-top: 1em;
+  }
+
+  .helpYou {
+    padding-top: 110px;
+    font-size: 24px;
+  }
+
+  .rowPhone {
+    margin-top: 4em;
+  }
+
+  .redTelephone {
+    margin-top: 150px;
   }
 }
 

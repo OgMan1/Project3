@@ -78,29 +78,12 @@ $(document).ready(function () {
 
   // JQUERY EFFECTS
 
-  $(".custom-navbar").fadeIn(1250);
-  $(".pictures, .dark").delay(500).slideDown(1000);
+  $(".custom-navbar").fadeIn(1000);
+  $(".pictures, .dark").slideDown(1000);
   $(".smallPicture").fadeIn(100);
-  $(".carouseltext").hide().fadeIn(2000);
   $(".grey-background").hide().slideDown(1500);
-  $(".redWhole").hide().fadeIn(1500);
-  $(".contacts").hide(500).fadeIn(1500);
-
-  $(".helpSpan").mouseover(function () {
-    $(".redTelephone").addClass("hinge");
-  });
-
-  $(".helpSpan").mouseleave(function () {
-    $(".redTelephone").removeClass("hinge");
-  });
-
-  $(".redTelephone").mouseover(function () {
-    $(this).addClass("swing");
-  });
-
-  $(".redTelephone").mouseleave(function () {
-    $(this).removeClass("swing");
-  });
+  // $(".redWhole").hide().fadeIn(1500);
+  // $(".contacts").hide(500).fadeIn(1500);
 
   $(".btnMeet ,.belo, .crveno").mouseover(function () {
     $(this).addClass("tada");
@@ -108,10 +91,6 @@ $(document).ready(function () {
 
   $(".btnMeet ,.belo, .crveno").mouseleave(function () {
     $(this).removeClass("tada");
-  });
-
-  $(".rPh1, .rPh2, .rPh3").mouseover(function () {
-    $(this).addClass("bounceInDown");
   });
 
   //  Lower than 480px
