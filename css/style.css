@@ -1541,6 +1541,10 @@ nav {
   .audioServices {
     display: none;
   }
+
+  .carousel-control {
+    width: 20%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1827,6 +1831,7 @@ nav {
 
   .mouseScroll {
     margin-top: 1.5em;
+    height: 40px;
   }
 
   .extraOneDiv h2 {
