@@ -1244,6 +1244,18 @@ nav {
 
 /* ---------------------------MEDIA----------------------------------  */
 
+@media screen and (min-width: 1899px) {
+  .carousellPictures {
+    top: 65%;
+  }
+}
+
+@media screen and (max-width: 1501px) {
+  .carousellPictures {
+    top: 70%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .pictures2 {
     height: 50vh;
@@ -1321,6 +1333,20 @@ nav {
 
   .video {
     margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 1050px) and (min-height: 750px) and (max-height: 850px) {
+  .pictures,
+  .dark {
+    height: 75vh;
+  }
+}
+
+@media only screen and (max-width: 1050px) and (min-height: 550px) and (max-height: 650px) {
+  .pictures,
+  .dark {
+    height: 98vh;
   }
 }
 
@@ -1544,6 +1570,26 @@ nav {
 
   .carousel-control {
     width: 20%;
+  }
+
+  .first,
+  .second,
+  .third {
+    margin: 0.75em;
+    display: flex;
+    width: 90%;
+    align-items: center;
+    -webkit-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media only screen and (max-width: 650px) and (min-height: 950px) and (max-height: 1000px) {
+  .carousellPictures {
+    width: 85%;
+    top: 84%;
+    left: 7%;
   }
 }
 
@@ -1866,17 +1912,6 @@ nav {
 
   .dark {
     background-color: rgba(0, 0, 0, 0.35);
-  }
-
-  .first,
-  .second,
-  .third {
-    margin: 1em 0;
-    display: flex;
-    align-items: center;
-    -webkit-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
-    -moz-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
-    box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
   }
 
   .navbar-nav {
