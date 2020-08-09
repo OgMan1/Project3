@@ -1287,7 +1287,7 @@ nav {
     background-position-x: 24%;
   }
   .paragraphHover {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .width {
@@ -1516,6 +1516,10 @@ nav {
     left: 9%;
   }
 
+  .textTablet .r {
+    margin-bottom: 1.5em;
+  }
+
   .glyphicon-right {
     right: 9%;
   }
@@ -1575,13 +1579,26 @@ nav {
   .first,
   .second,
   .third {
-    margin: 0.75em;
+    margin: 1em 0;
     display: flex;
-    width: 90%;
+    /* width: 90%; */
     align-items: center;
     -webkit-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
     -moz-box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
     box-shadow: 3px 2px 9px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .containerTablet {
+    padding: 40px 0 50px;
+  }
+
+  .width {
+    margin-top: 1.2em;
+  }
+
+  .paragraphHover {
+    font-size: 16px;
+    padding: 1.2em;
   }
 }
 
@@ -1690,7 +1707,7 @@ nav {
 
   .m {
     height: 200px;
-    margin-top: 420px;
+    margin-top: 400px;
   }
 
   .flexNew {
